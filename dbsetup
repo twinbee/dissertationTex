@@ -1,0 +1,33 @@
+#!/bin/zsh
+#SET THESE VARIABLE NAMES TO CORRESPOND TO YOUR REQUIREMENTS.
+#EXAMPLE FORMATS ARE GIVEN WHICH ARE CONSISTENT WITH GRADUATE
+#    SCHOOL REQUIREMENTS
+
+# NOTE THAT ANY BACKSLASH \ MUST BE WRITTEN AS \\ TO ESCAPE THE SHELL.
+# THIS WILL BE THE CASE IN LONG TITLES WHEN SETTING DISSname.
+
+# NOTE YOU MUST USE YOUR FULL NAME AS IT APPEARS ON YOUR DEGREE APPLICATION
+# TO THE GRADUATE SCHOOL. THE WORD by MUST APPEAR BEFORE YOUR NAME.
+
+DISSname='APPLICATION OF TRANSIENT METHODS TO \\\\[8pt] STUDIES ON LINEAR MANIFOLDS'
+DISSstudent='John N. Student'
+DISSbystudent='by John Albert Student'
+DISSdate='August 2005'
+DISSyear='2005'
+
+touch junk
+rm junk
+sed s/'DISSname'/$DISSname/  ./preamble/DISS_name  > junk
+mv junk ./preamble/DISS_name.tex
+sed s/'DISSstudent'/$DISSstudent/ ./preamble/DISS_student > junk
+mv junk ./preamble/DISS_student.tex
+sed s/'DISSstudent'/$DISSstudent/ ./preamble/DISS_studentline > junk
+mv junk ./preamble/DISS_studentline.tex
+sed s/'DISSstudent'/$DISSstudent/ ./preamble/DISS_bystudentline > junk
+mv junk ./preamble/DISS_bystudentline.tex
+sed s/'DISSdate'/$DISSdate/  ./preamble/DISS_date > junk
+mv junk ./preamble/DISS_date.tex
+sed s/'DISSyear'/$DISSyear/  ./preamble/DISS_year > junk
+mv junk ./preamble/DISS_year.tex
+
+echo dbsetup done

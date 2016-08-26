@@ -1,0 +1,33 @@
+.SUFFIXES:.F
+.SILENT:
+
+
+MAKE = make
+
+EINIT = ./bin/Einit
+
+EPOST = ./bin/Epost
+
+EPS = ./bin/Eps
+
+EBIBTEX = bibtex
+
+EGLOSTEX = ./bin/Emakeglossary
+
+ECLEANTX = ./bin/Ecleantx
+
+ERUN = ./bin/Erun
+
+DISSC = DISSc
+
+EPSPDF = ./bin/Epspdf
+
+EPDF = ./bin/Epdf
+
+#
+# Select a target
+#
+
+TARGET = all
+
+

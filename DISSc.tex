@@ -1,0 +1,413 @@
+%~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+%DOCUMENT:      DISSc.tex
+%AUTHOR:    J. Kolibal
+%REV:           26
+%DATE:          Mon Nov 21 09:40:52 CST 2005
+
+
+%
+%
+%DEPENDENCIES: Style files and bibliography style files:
+%               dissertation_usm.cls  DISS_pream.tex
+%               plain.bst
+%
+%              Chapters in the dissertation:
+%               DISS_chap1.tex DISS_chap2.tex DISS_chap3.tex
+%                DISS_chap4.tex DISS_chap5.tex DISS_chap6.tex  DISS_output.tex
+%
+%              The bibliography database:
+%               DISSc.bib
+%
+%              Disseration required lead pages:
+%               DISS_abstract.tex DISS_abstract_titlepage.tex
+%               DISS_titlepage.tex DISS_abbreviations.tex
+%
+%              Figures:
+%               DISS_mach.PS DISS_conv.PS DISS_machgnu.PS
+%
+%              Verbatim computer input:
+%               DISS_output.tex
+%
+%PURPOSE:      To demonstrate the generation of a dissertation for
+%           for Scientific Computing and Mathematics at USM.
+%
+%APPROACH:     This uses modified class files based on book.cls files
+%               to control the layout of the page for the majority of
+%               the page appearance. Some commands are not hard coded
+%               as macros in the style file. These must be entered
+%               as shown in this example in order to produce a file which
+%               is consistent with the requirments of the Graduate College.
+%
+%               You must also be aware of the rules that LaTeX uses to
+%               set a page. This includes 1) each paragraph begins on a
+%               newline after a blank line; 2) a word begins when at least
+%               one blank space is left on a line (punctuation belongs
+%               to the end of words, e.g.,  'this sentence ends. ' is
+%               the way to type, not 'this sentence ends .'; 3) parentheses
+%               belong to the words internal to the bracketed phrase,
+%               e.g., 'this (while they said otherwise) and not those'
+%               in contrast to 'this( while they said otherwise )and not those';
+%               and, 4) remember to tie together objects with forced
+%               spaces, thus 'Fig.~5' and not 'Fig. 5'. The detail
+%               is important to getting TeX to interpret the spacing.
+%
+%
+%+++++++++++++++++++++THIS VERSION IS SETUP TO RUN ON LINUX+++++++++++++++++++++
+
+%
+% You need to run teTeX (LaTeX2e) with the paths set correctly as
+%TEXINPUTS=.:$HOME/common/defaults/latex/inputs//:/home/defaults/latex/inputs//:
+%
+% If you are at USM on any Scientific Computing workstation running  Linux,
+% the setup of redhat linux should work without any additions modifations.
+%
+%++++++++++++++++++++++SETUP THE MARGINS AND SPACING++++++++++++++++++++++++++++
+
+% THIS SETUP INCLUDES THE AMSLatex FONTS AND MACROS AND THE NEW graphicx PACKAGE
+\documentclass[oneside,12pt]{dissertation_usm}
+\usepackage{graphicx,amssymb,amsfonts,amsmath,amsthm,eucal}
+% THE eucal package provides improved math caligraphic fonts.
+
+% PROVIDES AN ALTERNATIVE FONT ENCODING.
+%\usepackage[T1]{fontenc}
+
+%THIS USES THE Times-Roman FONTS (DEFAULT IS TO USE THIS PACKAGE)
+\usepackage{mathptm}
+
+% SELECT GLOSSARY ---
+%THIS PACKAGE ALLOWS YOU TO CREATE GLOSSARY ENTRIES. DO NOT UNCOMMENT EVEN
+% IF YOU PLAN TO NOT USE.
+\usepackage{nomencl}
+% SELECT GLOSSARY ---
+
+
+%THIS ALLOWS YOU TO CHANGE THE SCALE OF YOUR OUTPUT (THE UPPER LEFT CORNER
+% IS HELD CONSTANT). DO NOT USE UNLESS YOU NEED TO SCALE YOUR OUTPUT.
+% CHANGE THE \mag=VALUE command in the mag.sty FILE TO CHANGE THE SCALE.
+%\mag=1000 IS NORMAL SCALING.
+%\usepackage{mag}
+%
+
+
+
+%PROVIDES COLOR FOR TEXT AND BACKGROUND.
+\usepackage{color}
+
+
+%% THIS SETUP IS FOR Latex WITHOUT ANY AMSLatex.
+%\documentclass[oneside,12pt]{dissertation_usm}
+
+%\usepackage{graphicx}
+
+
+%
+\setlength{\topmargin}{-0.1in}
+%\setlength{\textheight}{8.9in}
+\setlength{\textheight}{9.3in}
+\setlength{\textwidth}{5.9in}
+\setlength{\oddsidemargin}{0.5in}
+\setlength{\evensidemargin}{0.5in}
+%
+
+
+
+
+
+
+%YOU MUST BRING IN THE epsf.tex FILE IF YOU USE epsfbox TO INPUT YOUR FIGURES.
+\input{epsf}
+
+
+%\sloppy
+%\raggedbottom
+
+
+
+%DEFINE COMMANDS. THESE ARE GLOBAL. USE THE DISS_pream_ams IF YOU ARE USING
+% AMS LaTeX COMMANDS.
+\input{preamble/DISS_pream}
+\input{preamble/DISS_pream_ams}
+
+
+
+%THIS WILL ALLOW YOU TO MAKE AN INDEX. TAKE THIS COMMAND OUT IF YOU DO
+% NOT DESIRE AN INDEX.
+\makeindex
+
+
+%SELECT GLOSSARY ---
+%THIS COMMAND WILL ALLOW YOU TO MAKE A GLOSSARY.
+% DO NOT USE UNLESS YOU HAVE READ THE DOCUMENTATION FOR THE nomenclature.sty
+% PACKAGE.
+\refpage
+\makeglossary
+%SELECT GLOSSARY ---
+
+
+
+
+
+
+
+\begin{document}
+
+
+
+
+%THE TEXT OF THE DOCUMENT.
+
+
+
+
+
+%DEFINE THE LEADING PAGES.
+%THIS IS THE ABSTRACT TITLE PAGE.
+\thispagestyle{empty}
+\input{preamble/DISS_abstract_titlepage}
+\setlength{\textheight}{8.7in}
+\newpage
+
+
+%THIS IS THE ABSTRACT.
+\setcounter{page}{1}   %THIS PAGE MUST HAVE AN ARABIC NUMBER 1 ON IT
+\thispagestyle{plain}
+\input{preamble/DISS_abstract}
+\newpage
+
+
+%THIS IS THE COPYRIGHT PAGE.
+\setcounter{page}{1}
+\thispagestyle{empty}
+\input{preamble/DISS_copyright}
+\newpage
+
+
+
+
+%THIS IS THE TITLE PAGE.
+\thispagestyle{empty}
+\input{preamble/DISS_titlepage}
+\newpage
+
+
+% THE ROMAN NUMBER OF THE PAGES BEGINS HERE
+% THIS IS THE SECOND PAGE (ii) OF THE DOCUMENT.
+{\pagestyle{plain}
+\pagenumbering{roman}
+\setcounter{page}{2}
+
+%DEFINE THE LEADING PAGES.
+%THIS IS THE DEDICATION PAGE.
+% THIS IS THE SECOND PAGE (ii) OF THE DOCUMENT.
+\input{preamble/DISS_dedication}
+\newpage
+
+%THIS IS THE TABLE OF CONTENTS.
+% THIS IS THE SECOND PAGE (ii) OF THE DOCUMENT IF THERE
+% IS NO DEDICATION PAGE.
+%\thispagestyle{plain}
+%\pagenumbering{roman}
+%\setcounter{page}{2}
+\tableofcontents
+
+%ADDED ABSTRACT PAGE------------------------------------------------------------
+\newcounter{abspage}
+\setcounter{abspage}{1}
+\addtocontents{toc}{ \addvspace{15pt}}
+
+%PULLED TOC ENTRIES FLUSH.
+\addtocontents{toc}{ {\bf ABSTRACT}
+      \dtfil \hspace*{10pt}  \arabic{abspage}}
+\addtocontents{toc}
+%ADDED ABSTRACT PAGE------------------------------------------------------------
+
+
+%THIS IS THE LISTING OF THE ACKNOWLEDGEMENTS
+\newcounter{ackpage}
+\setcounter{ackpage}{2}
+\addtocontents{toc}{ \addvspace{15pt}}
+
+%PULLED TOC ENTRIES FLUSH.
+\addtocontents{toc}{ {\bf \hspace*{-21pt} ACKNOWLEDGEMENTS}
+      \dtfil   \roman{ackpage}}
+\addtocontents{toc} { \addvspace{15pt}}
+
+
+% * * * MODIFIED listoffigures AND listoftables * * * -------------------------
+%PULLED TOC ENTRIES FLUSH.
+%Patch if page number of illustration entry is incorrect
+\addtocounter{page}{1}
+\addtocontents{toc}{\hspace*{-21pt} {\bf LIST OF ILLUSTRATIONS}
+      \dtfil \hspace*{10pt}  \roman{page}}
+\addtocontents{toc}{ \addvspace{15pt}}
+\addtocounter{page}{-1}
+\listoffigures
+
+
+% PULLED TOC ENTRIES FLUSH.
+%Patch if page number of tables entry is incorrect
+\addtocounter{page}{1}
+\addtocontents{toc}{ \addvspace{15pt}}
+\addtocontents{toc}{\hspace*{-17pt}{\bf LIST OF TABLES}
+       \dtfil \hspace{10pt} \roman{page}}
+\addtocounter{page}{-1}
+\listoftables
+% * * * MODIFIED listoffigures AND listoftables * * * -------------------------
+
+
+%THIS IS THE LIST OF ABBREVIATIONS.
+\clearpage
+\thispagestyle{plain}
+
+%PULLED TOC ENTRIES FLUSH.
+\addtocontents{toc}{ \addvspace{15pt}}
+\addtocontents{toc}{\hspace*{-17pt}{\bf LIST OF ABBREVIATIONS}
+           \dtfil \hspace{10pt} \roman{page}}
+\addtocontents{toc}{ \addvspace{10pt}}
+
+\input{preamble/DISS_abbreviations}
+
+
+%SELECT GLOSSARY ---
+%THIS IS THE NOMENCLATURE GLOSSARY
+\newcounter{glosscount}
+%\pagestyle{myheadings}
+%\markboth{\small \sl \hfill NOTATION \hfill }{\small \sl \hfill NOTATION  \hfill}
+\input{glossary}
+% THE \label{glosspage} COMMAND MAY HAVE TO BE SET AFTER THE GLOSSARY IS CALLED.
+\label{glosspage}
+\printglossary[1.2cm]             % SET TO 1.2cm wide.
+%\setcounter{glosscount}{13}
+%SET PAGE MANUALLY
+%ADD GLOSSARY TO TABLE OF CONTENTS
+\addtocontents{toc}{ \addvspace{0pt}}
+\addtocontents{toc}{\hspace*{-17pt}{\bf NOTATION AND GLOSSARY}
+%      \dtfil \hspace*{10pt}  \roman{glosscount}}
+      \dtfil \hspace*{10pt}  \pageref{glosspage}}
+\addtocontents{toc}{ \addvspace{15pt}}
+%SELECT GLOSSARY ---
+%\label{glosspage}
+%\clearpage
+\thispagestyle{empty}
+
+
+
+}                                           % CLOSE PLAIN PAGE STYLE.
+
+
+%THIS ENDS THE PREAMBLE FILES.
+
+
+
+%....................................................................................
+%THIS CLEARPAGE IS NECESSARY TO CLEAR THE BUFFERS
+\clearpage
+\baselineskip=18pt
+
+
+%BEGIN THE TEXT OF THE DOCUMENT.
+\pagenumbering{arabic}
+\setcounter{page}{1}
+
+
+%BEGIN THE FIRST CHAPTER WHICH IS IN FILE DISS_chap1.tex IN THE FILE SPACE.
+\input{chapter/DISS_chap1}
+
+%BEGIN THE SECOND CHAPTER WHICH IS IN FILE DISS_chap2.tex IN THE FILE SPACE.
+\input{chapter/DISS_chap2}
+
+
+%BEGIN THE THIRD CHAPTER WHICH IS IN FILE DISS_chap3.tex IN THE FILE SPACE.
+\input{chapter/DISS_chap3}
+
+%BEGIN THE FOURTH CHAPTER. THIS SHOWS THE USE OF FONTS
+%\input{chapter/DISS_chap4}
+
+%BEGIN THE FIFTH CHAPTER. THIS IS TAKE FROM testmath.tex FROM THE AMS PACKAGE.
+% TO ILLUSTRATE THE USE OF amslatex.
+
+%\input{chapter/DISS_chap5}
+
+
+%JK REV 7 MODIFIED ENTRY FOR TABLE OF CONENTS FOR APPENDIX.
+\addtocontents{toc}{\addvspace{20pt}}
+\addtocontents{toc}{\hspace*{-17pt}{\bf APPENDIX} \hfill }
+
+\input{chapter/DISS_appenda}
+
+
+%+++++++++++++++++++++++++PROCESS THE BIBLIOGRAPHY++++++++++++++++++++++++++++++
+
+
+
+
+
+%PROCESS THE BIBLIOGRAPHY
+% REVIEW THE DOCUMENTATION IN ./doc.
+\baselineskip=12pt
+
+
+%THE NOCITE COMMAND IS NEEDED TO INPUT REFERENCES WHICH ARE NOT EXPLICITELY
+%REFERENCED IN THE BODY OF THE TEXT USING THE CITE COMMAND.
+\input{DISSc_nocite}
+
+{\small
+%\baselineskip=12.8pt
+
+
+
+
+%THIS IS OPTIONAL. IT WILL PUT A LISTING OF THE BIBLIOGRAPHY IN THE
+% TABLE OF CONTENTS.
+\clearpage
+\addtocontents{toc}{ \addvspace{15pt}}
+\addtocontents{toc}{\hspace*{-17pt}{\bf BIBLIOGRAPHY}
+           \dtfil \hspace{10pt} \arabic{page}}
+\addtocontents{toc}{ \addvspace{10pt}}
+
+
+%YOU MAY USE plain OR siam STYLE
+\bibliography{DISSc}
+%\bibliographystyle{siam}
+\bibliographystyle{plain}
+
+
+
+
+%THIS IS OPTIONAL. IT WILL PUT A LISTING OF THE INDEX IN THE
+% TABLE OF CONTENTS.
+\clearpage
+\addtocontents{toc}{ \addvspace{15pt}}
+\addtocontents{toc}{\hspace*{-17pt}{\bf INDEX}
+           \dtfil \hspace{10pt} \arabic{page}}
+\addtocontents{toc}{ \addvspace{10pt}}
+
+
+
+
+
+
+
+}
+
+
+%++++++++++++++++++++++END PROCESS THE BIBLIOGRAPHY+++++++++++++++++++++++++++++
+
+
+
+%++++++++++++++++++++++++++++PROCESS THE INDEX++++++++++++++++++++++++++++++++++
+%PROCESS THE INDEX.
+% REVIEW THE DOCUMENTATION IN ./doc.
+
+%THIS CHOOSES A WIDE SINGLE SPACE FOR THE INDEX.
+\baselineskip=15pt
+
+\input{DISSc.ind}
+
+
+%+++++++++++++++++++++++++END PROCESS THE INDEX+++++++++++++++++++++++++++++++++
+
+
+
+
+\end{document}

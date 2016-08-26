@@ -1,0 +1,5 @@
+#!/bin/zsh
+more README.disstool
+nxterm -ls  -fn 6x10  -geometry 80x18+175+143   -bg slategray -fg white  -title logfile -e  ./bin/Ediss DISSc  &
+
+

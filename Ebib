@@ -1,0 +1,42 @@
+#!/bin/csh -f
+# run Ebib
+#
+#  TITLE:   Ebib
+#  AUTHOR:  J. Kolibal
+#  DATE:    12/18/95
+#  REVISION:     0
+#  DEPENDENCIES: ./lib/latex/bibform
+#                                    front.tex, back.tex
+#  PURPOSE: exec to vi the file TYPE.bib in the directory ./lib/latex/bibform
+#                 and cat it to the present version of bib.
+#
+set fn=$argv[$#argv]
+if($#argv == 1) then
+echo $BIBFILE
+cat < ./lib/latex/bibform/$1.bib  >> $BIBFILE.bib
+xterm -e vi $BIBFILE.bib  &
+endif
+if($#argv == 0) then
+echo 'Usage: Ebib TYPE'
+echo 'where,'
+echo 'TYPE = article',
+echo '       book'
+echo '       booklet'
+echo '       conference'
+echo '       inbook'
+echo '       incollection'
+echo '       inproceedings'
+echo '       mastersthesis'
+echo '       phdthesis'
+echo '       techreport'
+echo 'To use set the environment variable BIBFILE to the filename.'
+endif
+echo 'Ebib done'
+
+
+
+
+
+
+
+

@@ -1,0 +1,40 @@
+ \@tempskipb 15pt\relax 
+ {\bf ABSTRACT} \cleaders \hbox {$ \mkern 5.0mu . \mkern 5.0mu$}\hfill \hspace *{10pt} 1
+\par 
+ \vskip 15pt\relax 
+ {\bf \hspace *{-21pt} ACKNOWLEDGEMENTS} \cleaders \hbox {$ \mkern 5.0mu . \mkern 5.0mu$}\hfill ii
+ \vskip 15pt\relax 
+\hspace *{-21pt} {\bf LIST OF ILLUSTRATIONS} \cleaders \hbox {$ \mkern 5.0mu . \mkern 5.0mu$}\hfill \hspace *{10pt} iv
+ \vskip 15pt\relax 
+ \@tempskipb 15pt\relax 
+\hspace *{-17pt}{\bf LIST OF TABLES} \cleaders \hbox {$ \mkern 5.0mu . \mkern 5.0mu$}\hfill \hspace {10pt} v
+ \vskip 15pt\relax 
+\hspace *{-17pt}{\bf LIST OF ABBREVIATIONS} \cleaders \hbox {$ \mkern 5.0mu . \mkern 5.0mu$}\hfill \hspace {10pt} vi
+ \vskip 10pt\relax 
+ \vskip 0pt\relax 
+\hspace *{-17pt}{\bf NOTATION AND GLOSSARY} \cleaders \hbox {$ \mkern 5.0mu . \mkern 5.0mu$}\hfill \hspace *{10pt} vii\hbox {}
+ \vskip 15pt\relax 
+\contentsline {chapter}{\numberline {1}Motivation from Basic Mechanics}{1}
+\contentsline {section}{\numberline {1.1}Human Scales}{1}
+\contentsline {section}{\numberline {1.2}Correspondence}{2}
+\contentsline {chapter}{\numberline {2}Interference}{3}
+\contentsline {section}{\numberline {2.1}Non-interfering systems}{3}
+\contentsline {subsection}{\numberline {2.1.1}A Bullet Experiment}{3}
+\contentsline {section}{\numberline {2.2}Interference patterns}{5}
+\contentsline {subsection}{\numberline {2.2.1}Young's Experiment}{5}
+\contentsline {chapter}{\numberline {3}Quantum interference}{7}
+\contentsline {section}{\numberline {3.1}Electron behavior}{7}
+\contentsline {section}{\numberline {3.2}Consequences}{7}
+\vskip 20pt\relax 
+\hspace *{-17pt}{\bf APPENDIX} \hfill 
+\contentsline {chapter}{\numberline {A}The Standard Model}{10}
+\contentsline {section}{\numberline {A.1}Fermions (half-integer spin)}{10}
+\contentsline {subsection}{\numberline {A.1.1}Quarks}{10}
+\contentsline {subsection}{\numberline {A.1.2}Leptons}{10}
+\contentsline {section}{\numberline {A.2}Bosons (integer spin)}{10}
+ \vskip 15pt\relax 
+\hspace *{-17pt}{\bf BIBLIOGRAPHY} \cleaders \hbox {$ \mkern 5.0mu . \mkern 5.0mu$}\hfill \hspace {10pt} 12
+ \vskip 10pt\relax 
+ \vskip 15pt\relax 
+\hspace *{-17pt}{\bf INDEX} \cleaders \hbox {$ \mkern 5.0mu . \mkern 5.0mu$}\hfill \hspace {10pt} 13
+ \vskip 10pt\relax 

@@ -1,0 +1,244 @@
+@book{Feynman,
+   author    = {Richard Feynman},
+   title     = {Six Not So Easy Pieces},
+   year      = {1963},
+   publisher = {Perseus Publishers},
+   address   = {Cambridge, MA  02116},
+   annote    = { }
+}
+
+
+
+%@techreport{Bergermj,
+%   author    = {M. J. Berger},
+%   title     = {Stability of Interfaces with Mesh Refinement},
+%   institution = {ICASE},
+%   year      = {1983},
+%   month     = {August},
+%   address   = {{NASA} Langley Research Center, Hampton},
+%   number    = {83-42},
+%   type      = {Paper},
+%   annote    = { }
+%}
+%
+%
+%@inproceedings{abbettmj,
+%   author    = {M. J. Abbett},
+%   title     = {Boundary Condition Calculation Procedures for Inviscid Supersonic Flow Fields},
+%   booktitle = {Proceedings, AIAA Computational Fluid Dynamics Conference, Palm Springs, CA., July 19-20, 1973},
+%   organization = {American Institute of Aeronautics and Astronautics},
+%   year      = {1973},
+%   publisher = {AIAA},
+%   address   = {New York},
+%   pages     = {153-172},
+%   annote    = { },
+%   ofnote    = {UNCATOLOGUED}
+%}
+%
+%
+%@book{bowersandwilson,
+%   author    = {Richard L. Bowers and James R. Wilson},
+%   title     = {Numerical Modeling in Applied Physics and Astrophysics},
+%   year      = {1991},
+%   publisher = {Jones and Bartlett Publishers},
+%   address   = {Boston, MA  02116},
+%   annote    = { },
+%   ofnote    = {USM CAT228}
+%}
+%
+%
+%@book{grantpj,
+%   author    = {P.~J. Grant},
+%   title     = {Elementary Reactor Physics},
+%   year      = {1966},
+%   publisher = {Pergamon Press},
+%   annote    = { },
+%   ofnote    = {USM CAT80}
+%}
+%
+%
+%@incollection{gustafssonb,
+%   author    = {B. Gustafsson},
+%   title     = {Numerical Boundary Conditions},
+%   booktitle = {Large-Scale Computations in Fluid Mechanics},
+%   year      = {1985},
+%   editor    = {B. E. Engquist and S. Osher and R. C. J. Somerville},
+%   publisher = {AMS},
+%   address   = {Providence},
+%   pages     = {279-308},
+%   note      = {Lectures in Applied Mathematics, Vol. 22, Part 1},
+%   annote    = { }
+%}
+%
+%
+%@conference{hoffd/hoff5,
+%   author    = {D. Hoff},
+%   title     = {Two Existence Theorems for Systems of Conservation Laws with Dissipation},
+%   booktitle = {Lecture Notes in Mathematics, 1270},
+%   year      = {1986},
+%   editor    = {C. Carasso and P.-A. Raviard and D. Serre},
+%   publisher = {Springer-Verlag},
+%   address   = {Berlin},
+%   pages     = {181-194},
+%   note      = {Nonlinear Hyperbolic Problems.  Proceedings of an Advanced Research Workshop held in St. Etienne, France, January 13-17, 1986},
+%   annote    = { }
+%}
+%
+%
+%@article{kreissho,
+%   author    = {H. O. Kreiss},
+%   title     = {Initial Boundary Value Problems for Hyperbolic Systems},
+%   journal   = {Communications on Pure and Applied Mathematics},
+%   year      = {1970},
+%   volume    = {23},
+%   pages     = {277-298},
+%   annote    = { }
+%}
+%
+%
+%@book{krutzm,
+%   author    = {Max Kurtz},
+%   title     = {Handbook of Applied Mathematics for Engineers and Scientists},
+%   year      = {1991},
+%   publisher = {McGraw-Hill, Inc.},
+%   annote    = { },
+%   ofnote    = {USM CAT229}
+%}
+%
+%
+%@book{lamarshjr,
+%   author    = {J.~R. Lamarsh},
+%   title     = {Introduction to Nuclear Reactor Theory},
+%   year      = {1966},
+%   publisher = {Addison-Wesley Publishing Company},
+%   annote    = { },
+%   ofnote    = {USM CAT134}
+%}
+%
+%
+%@book{laxpd,
+%   author    = {Peter D. Lax},
+%   title     = {Hyperbolic Systems of Conservation Laws and the Mathematical Theory of Shock Waves},
+%   year      = {1973},
+%   publisher = {{SIAM}},
+%   address   = {Philadelphia, PA},
+%   annote    = { },
+%   ofnote    = {USM CAT226}
+%}
+%
+%
+%@phdthesis{mayt,
+%   author    = {T. May},
+%   title     = {Boundary Conditions in the Numerical Integration of Hyperbolic Equations},
+%   year      = {1978},
+%   month     = {May},
+%   address   = {Reading},
+%   school    = {University of Reading},
+%   annote    = { },
+%   ofnote    = {UNCATOLOGUED}
+%}
+%
+%
+%@book{mccauslandi,
+%   author    = {I. McCausland},
+%   title     = {Introduction to Optimal Control},
+%   year      = {1969},
+%   publisher = {John Wiley \& Sons},
+%   annote    = { },
+%   ofnote    = {USM CAT135}
+%}
+%
+%
+%@book{profioae,
+%   author    = {A.~E. Profio},
+%   title     = {Radiation Shielding and Dosimetry},
+%   year      = {1979},
+%   publisher = {John Wiley \& Sons},
+%   annote    = { },
+%   ofnote    = {USM CAT200}
+%}
+%
+%
+%@conference{roeandvanleer,
+%   author    = {P. L. Roe and B. van~Leer},
+%   title     = {Non-Existence, Non-Uniqueness and Slow Convergence in Discrete Conservation Laws},
+%   booktitle = {Numerical Methods for Fluid Dynamics III},
+%   organization = {ICFD},
+%   year      = {1988},
+%   editor    = {K. W. Morton and M. J. Baines},
+%   publisher = {Oxford University Press},
+%   address   = {Oxford},
+%   pages     = {520-529},
+%   annote    = { }
+%}
+%
+%
+%@book{rozdestvenskiiandjanenko,
+%   author    = {B. L. Ro\v{z}destvenski\u{i} and N. N. Janenko},
+%   title     = {Systems of Quasilinear Equations and their Application to Gas Dynamics},
+%   year      = {1983},
+%   publisher = {AMS},
+%   address   = {Providence},
+%   volume    = {55},
+%   note      = {Translations of Mathematical Monographs},
+%   annote    = { }
+%}
+%
+%
+%@book{sodga,
+%   author    = {Gary A. Sod},
+%   title     = {Numerical Methods in Fluid Dynamics:  Initial and Initial Boundary-Value Problems},
+%   year      = {1987},
+%   publisher = {Cambridge University Press},
+%   address   = {New York, NY},
+%   annote    = { },
+%   ofnote    = {USM CAT224}
+%}
+%
+%
+%@article{veuillotandviviandaiaajournal,
+%   author    = {J.-P. Veuillot and H. Viviand},
+%   title     = {Pseudo-Unsteady Method for the Computation of Transonic Potential Flows},
+%   journal   = {AIAA Journal},
+%   year      = {1979},
+%   month     = {July},
+%   volume    = {17},
+%   number    = {7},
+%   pages     = {691-693},
+%   annote    = { }
+%}
+%
+%
+%@book{wagons,
+%   author    = {Stan Wagon},
+%   title     = {Mathematica in Action},
+%   year      = {1991},
+%   publisher = {W.~H. Freeman and Company},
+%   address   = {New York, NY},
+%   annote    = { },
+%   ofnote    = {USM CAT227}
+%}
+%
+%
+%@book{walkerandmiller,
+%   author    = {F.~W. Walker and D.~G. Miller and F. Feiner},
+%   title     = {Chart of the Nuclides},
+%   year      = {1984},
+%   publisher = {General Electric Company},
+%   annote    = { },
+%   ofnote    = {USM CAT43}
+%}
+%
+%
+%@book{wickelgrenwa,
+%   author    = {Wayne A. Wickelgren},
+%   title     = {How to Solve Problems, Elements of a Theory of Problems and Problem Solving},
+%   year      = {1974},
+%   publisher = {W.~H. Freeman and Company},
+%   address   = {New York, NY},
+%   annote    = { },
+%   ofnote    = {USM CAT223}
+%}
+%
+%%
+%%

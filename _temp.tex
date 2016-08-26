@@ -1,0 +1,156 @@
+%~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+%DOCUMENT:      DISSc.tex
+%AUTHOR:    J. Kolibal
+%REV:           26
+%DATE:          Mon Nov 21 09:40:52 CST 2005
+
+
+%
+%
+%DEPENDENCIES: Style files and bibliography style files:
+%               dissertation_usm.cls  DISS_pream.tex
+%               plain.bst
+%
+%              Chapters in the dissertation:
+%               DISS_chap1.tex DISS_chap2.tex DISS_chap3.tex
+%                DISS_chap4.tex DISS_chap5.tex DISS_chap6.tex  DISS_output.tex
+%
+%              The bibliography database:
+%               DISSc.bib
+%
+%              Disseration required lead pages:
+%               DISS_abstract.tex DISS_abstract_titlepage.tex
+%               DISS_titlepage.tex DISS_abbreviations.tex
+%
+%              Figures:
+%               DISS_mach.PS DISS_conv.PS DISS_machgnu.PS
+%
+%              Verbatim computer input:
+%               DISS_output.tex
+%
+%PURPOSE:      To demonstrate the generation of a dissertation for
+%           for Scientific Computing and Mathematics at USM.
+%
+%APPROACH:     This uses modified class files based on book.cls files
+%               to control the layout of the page for the majority of
+%               the page appearance. Some commands are not hard coded
+%               as macros in the style file. These must be entered
+%               as shown in this example in order to produce a file which
+%               is consistent with the requirments of the Graduate College.
+%
+%               You must also be aware of the rules that LaTeX uses to
+%               set a page. This includes 1) each paragraph begins on a
+%               newline after a blank line; 2) a word begins when at least
+%               one blank space is left on a line (punctuation belongs
+%               to the end of words, e.g.,  'this sentence ends. ' is
+%               the way to type, not 'this sentence ends .'; 3) parentheses
+%               belong to the words internal to the bracketed phrase,
+%               e.g., 'this (while they said otherwise) and not those'
+%               in contrast to 'this( while they said otherwise )and not those';
+%               and, 4) remember to tie together objects with forced
+%               spaces, thus 'Fig.~5' and not 'Fig. 5'. The detail
+%               is important to getting TeX to interpret the spacing.
+%
+%
+%+++++++++++++++++++++THIS VERSION IS SETUP TO RUN ON LINUX+++++++++++++++++++++
+
+%
+% You need to run teTeX (LaTeX2e) with the paths set correctly as
+%TEXINPUTS=.:$HOME/common/defaults/latex/inputs//:/home/defaults/latex/inputs//:
+%
+% If you are at USM on any Scientific Computing workstation running  Linux,
+% the setup of redhat linux should work without any additions modifations.
+%
+%++++++++++++++++++++++SETUP THE MARGINS AND SPACING++++++++++++++++++++++++++++
+
+% THIS SETUP INCLUDES THE AMSLatex FONTS AND MACROS AND THE NEW graphicx PACKAGE
+\documentclass[oneside,12pt]{dissertation_usm}
+\usepackage{graphicx,amssymb,amsfonts,amsmath,amsthm,eucal}
+% THE eucal package provides improved math caligraphic fonts.
+
+% PROVIDES AN ALTERNATIVE FONT ENCODING.
+%\usepackage[T1]{fontenc}
+
+%THIS USES THE Times-Roman FONTS (DEFAULT IS TO USE THIS PACKAGE)
+\usepackage{mathptm}
+
+% SELECT GLOSSARY ---
+%THIS PACKAGE ALLOWS YOU TO CREATE GLOSSARY ENTRIES. DO NOT UNCOMMENT EVEN
+% IF YOU PLAN TO NOT USE.
+\usepackage{nomencl}
+% SELECT GLOSSARY ---
+
+
+%THIS ALLOWS YOU TO CHANGE THE SCALE OF YOUR OUTPUT (THE UPPER LEFT CORNER
+% IS HELD CONSTANT). DO NOT USE UNLESS YOU NEED TO SCALE YOUR OUTPUT.
+% CHANGE THE \mag=VALUE command in the mag.sty FILE TO CHANGE THE SCALE.
+%\mag=1000 IS NORMAL SCALING.
+%\usepackage{mag}
+%
+
+
+
+%PROVIDES COLOR FOR TEXT AND BACKGROUND.
+\usepackage{color}
+
+
+%% THIS SETUP IS FOR Latex WITHOUT ANY AMSLatex.
+%\documentclass[oneside,12pt]{dissertation_usm}
+
+%\usepackage{graphicx}
+
+
+%
+\setlength{\topmargin}{-0.1in}
+%\setlength{\textheight}{8.9in}
+\setlength{\textheight}{9.3in}
+\setlength{\textwidth}{5.9in}
+\setlength{\oddsidemargin}{0.5in}
+\setlength{\evensidemargin}{0.5in}
+%
+
+
+
+
+
+
+%YOU MUST BRING IN THE epsf.tex FILE IF YOU USE epsfbox TO INPUT YOUR FIGURES.
+\input{epsf}
+
+
+%\sloppy
+%\raggedbottom
+
+
+
+%DEFINE COMMANDS. THESE ARE GLOBAL. USE THE DISS_pream_ams IF YOU ARE USING
+% AMS LaTeX COMMANDS.
+\input{preamble/DISS_pream}
+\input{preamble/DISS_pream_ams}
+
+
+
+%THIS WILL ALLOW YOU TO MAKE AN INDEX. TAKE THIS COMMAND OUT IF YOU DO
+% NOT DESIRE AN INDEX.
+\makeindex
+
+
+%SELECT GLOSSARY ---
+%THIS COMMAND WILL ALLOW YOU TO MAKE A GLOSSARY.
+% DO NOT USE UNLESS YOU HAVE READ THE DOCUMENTATION FOR THE nomenclature.sty
+% PACKAGE.
+\refpage
+\makeglossary
+%SELECT GLOSSARY ---
+
+
+
+
+
+
+
+
+\begin{document}
+
+
+\end{document}
